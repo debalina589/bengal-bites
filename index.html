@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Bengal Bites, a fictional Bengali restaurant in Kolkata. Browse signature dishes, view our gallery, and try our booking enquiry demo."
+    />
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Bengal Bites">
+    <meta property="og:title" content="Bengal Bites | Bengali Restaurant in Kolkata">
+    <meta
+  property="og:description"
+  content="Discover Bengali flavours, signature dishes, and warm hospitality in this student restaurant website."
+>
+<meta
+  property="og:url"
+  content="https://YOUR-DOMAIN.example/"
+>
+<meta
+  property="og:image"
+  content="https://YOUR-DOMAIN.example/assets/restaurant.jpg">
+  <meta property="og:image:alt"
+  content="Food served at Bengal Bites">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Bengal Bites | Bengali Restaurant in Kolkata</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('bengal-bites-theme');
+            if (savedTheme === 'dark' || savedTheme === 'light') {
+                document.documentElement.dataset.bsTheme = savedTheme;
+            }
+        } catch {
+            
+        }
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Bengal Bites</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <button
+                    id="themeToggle"
+                    type="button"
+                    class="btn btn-outline-light btn-sm ms-lg-3"
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                     Dark mode
+                </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center gx-4 gy-5">
+            <div class="col-12 col-lg-6">
+              <p class="text-uppercase fw-semibold text-warning">
+                Welcome to Bengal Bites
+              </p>
+              <h1 class="display-4 fw-bold">
+                A taste of Bengal, served with love
+              </h1>
+              <p>
+                Enjoy comforting Bengali dishes, fresh ingredients, and warm
+                hospitality.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#menu" class="btn btn-warning btn-lg">View Menu</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg"
+                  >Reserve a Table</a
+                >
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <img
+                src="assets/restaurant.jpg"
+                alt="A selection of dishes served at Bengal Bites"
+                class="hero-image img-fluid rounded-4 shadow"
+                width="900"
+                height="675"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5" aria-labelledby="about-title">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-6">
+              <img
+                src="assets/about.jpg"
+                alt="Dinning area inside Bengal Bites"
+                class="about-image img-fluid rounded-4"
+                width="900"
+                height="675"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="text-uppercase text-success fw-semibold">Our Story</p>
+              <h2 id="about-title" class="fw-bold mb-3">
+                Bringing Bengal to your table
+              </h2>
+              <p class="text-secondary">
+                At Bengal Bites, we celebrate the comforting flavours of Bengali
+                home cooking. Our dishes bring together familiar spices,
+                seasonal vegetables, and recipes inspired by family traditions.
+              </p>
+              <p class="text-secondary">
+                From a relaxed lunch to a family celebration, we welcome you to
+                enjoy good food and warm hospitality.
+              </p>
+              <a href="#menu" class="btn btn-success">Explore Our Menu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="py-5 bg-light" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="text-uppercase text-success fw-semibold">
+              Freshly Prepared
+            </p>
+            <h2 id="menu-title" class="fw-bold text-warning">
+              Our Signature Dishes
+            </h2>
+            <p class="text-secondary">
+              Discover a few favourites from our kitchen
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/fish-curry.jpg"
+                  class="card-img-top menu-image"
+                  alt="Bengali fish curry"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                    <span
+                        class="badge text-bg-warning align-self-start mb-2"
+                        data-special-days="5,6,0"
+                        hidden>
+                        Today's Special
+                    </span>
+                  <h3 class="h5 card-title">Bengali Fish Curry</h3>
+                  <p class="card-text text-secondary">
+                    Fish cooked in a lightly spiced gravy with potatoes and
+                    traditional Bengali spices.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹280</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/chicken-curry.jpg"
+                  class="card-img-top menu-image"
+                  alt="Bengali Chicken curry with potatoes"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Chicken Curry</h3>
+                  <p class="card-text text-secondary">
+                    Tender chicken and potatoes simmered in a rich onion and
+                    tomato gravy.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹260</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/shukto.jpg"
+                  class="card-img-top menu-image"
+                  alt="Shukto served in a bowl"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Shukto</h3>
+                  <p class="card-text text-secondary">
+                    A traditional Bengali mixed vegetable dish with gentle
+                    spices and a hint of bitterness.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹180</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/luchi-alur-dom.jpg"
+                  class="card-img-top menu-image"
+                  alt="Shukto served in a bowl"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Luchi & Alur Dom</h3>
+                  <p class="card-text text-secondary">
+                    Golden, puffed luchi served with potatoes in a flavourful
+                    spiced gravy.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹100</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/mishti-doi.jpg"
+                  class="card-img-top menu-image"
+                  alt="Mishti doi served in an earthen pot"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Mishti Doi</h3>
+                  <p class="card-text text-secondary">
+                    A creamy, sweetened yoghurt dessert served chilled for a
+                    refreshing finish.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹80</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/rasgulla.jpg"
+                  class="card-img-top menu-image"
+                  alt="Rasgullas served in sugar syrup"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Rasgulla</h3>
+                  <p class="card-text text-secondary">
+                    Soft chhena sweets soaked in a light sugar syrup.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹60</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card menu-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/pithe.jpg"
+                  class="card-img-top menu-image"
+                  alt="Pithe"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Bengali Pithe Puli Platter</h3>
+                  <p class="card-text text-secondary">
+                    A beautifully arranged platter of traditional Indian
+                    festival sweets, featuring rolled patishapta pithas, soft
+                    laddus, and creamy kheer garnished with roasted nuts.
+                  </p>
+                  <p class="fw-bold text-success mt-auto mb-0">₹80</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="py-5" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="text-center mb-4">
+            <p class="text-uppercase text-success fw-semibold">
+              A Glimpse of Bengal Bites
+            </p>
+            <h2 id="gallery-title" class="fw-bold">Our Gallery</h2>
+            <p class="text-secondary">Click to enlarge</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of our dining area"
+              >
+                <img
+                  src="assets/about.jpg"
+                  alt="Dinning area inside Bengal Bites"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Bengali fish curry"
+              >
+                <img
+                  src="assets/fish-curry.jpg"
+                  alt="Bengali fish curry"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Bengali Chicken curry"
+              >
+                <img
+                  src="assets/chicken-curry.jpg"
+                  alt="Bengali Chicken curry"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Misty Doi"
+              >
+                <img
+                  src="assets/mishti-doi.jpg"
+                  alt="Mishti Doi"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Pithe Puli"
+              >
+                <img
+                  src="assets/pithe.jpg"
+                  alt="Pithe Puli"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Rasgulla"
+              >
+                <img
+                  src="assets/rasgulla.jpg"
+                  alt="Rasgulla"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Luchi Alur Dom"
+              >
+                <img
+                  src="assets/luchi-alur-dom.jpg"
+                  alt="luchi-alur-dom"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <button
+                type="button"
+                class="gallery-button"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                aria-label="Enlarge photo of Shukto"
+              >
+                <img
+                  src="assets/shukto.jpg"
+                  alt="Shukto"
+                  class="gallery-image"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="py-5 bg-light"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <div class="text-center mb-4">
+            <p class="text-uppercase text-success fw-semibold">
+              Guest Experiences
+            </p>
+            <h2 id="testimonials-title" class="fw-bold text-warning">
+              What Our Guests Say
+            </h2>
+            <p class="text-secondary">
+              Sample reviews for this fictional restaurant.
+            </p>
+            <div
+              id="reviewsCarousel"
+              class="carousel slide"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Guest reviews"
+            >
+              <div class="carousel-inner" aria-live="polite">
+                <div class="carousel-item active">
+                  <figure
+                    class="review-card bg-white rounded-4 shadow-sm text-center"
+                  >
+                    <blockquote class="blockquote">
+                      <p class="text-body">
+                        “The fish curry reminded me of home. Lovely flavours and
+                        a welcoming atmosphere!”
+                      </p>
+                    </blockquote>
+                    <figcaption class="mt-3">
+                      <span class="d-block fw-bold text-secondary"
+                        >Ananya Sen</span
+                      >
+                      <span class="text-secondary small"
+                        >Sample guest · Review 1 of 3</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure
+                    class="review-card bg-white rounded-4 shadow-sm text-center"
+                  >
+                    <blockquote class="blockquote">
+                      <p class="text-body">
+                        “We loved the luchi and alur dom. A wonderful place for
+                        a relaxed family lunch.”
+                      </p>
+                    </blockquote>
+
+                    <figcaption class="mt-3">
+                      <span class="d-block fw-bold text-secondary"
+                        >Rahul Das</span
+                      >
+                      <span class="text-secondary small"
+                        >Sample guest · Review 2 of 3</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure
+                    class="review-card bg-white rounded-4 shadow-sm text-center"
+                  >
+                    <blockquote class="blockquote">
+                      <p class="text-body">
+                        “The mishti doi was a delicious finish to our meal. We
+                        would happily visit again!”
+                      </p>
+                    </blockquote>
+
+                    <figcaption class="mt-3">
+                      <span class="d-block fw-bold text-secondary"
+                        >Riya Roy</span
+                      >
+                      <span class="text-secondary small"
+                        >Sample guest · Review 3 of 3</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center gap-3 mt-4">
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  data-bs-target="#reviewsCarousel"
+                  data-bs-slide="prev"
+                  aria-label="Show previous review"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-success"
+                  type="button"
+                  data-bs-target="#reviewsCarousel"
+                  data-bs-slide="next"
+                  aria-label="Show next review"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="text-center mb-5"></div>
+          <h2 id="contact-title" class="fw-bold">Contact & Location</h2>
+          <p class="text-secondary">Have a question? Fill in the form below.</p>
+
+          <div class="row g-4">
+            <div class="col-12 col-lg-6">
+              <h3 class="h5">Find Us</h3>
+              <p>
+                <strong>Location:</strong>
+                Kolkata, West Bengal
+              </p>
+              <p>
+                <strong>Phone:</strong>
+                +91 7074455888
+              </p>
+              <p>
+                <strong>Email:</strong>
+                hello@bengalbites.example
+              </p>
+              <p class="small text-secondary">
+                Fictional restaurant details for this project. The map shows
+                Kolkata, not an actual restaurant.
+              </p>
+              <iframe
+                src="https://maps.google.com/maps?q=Kolkata&output=embed"
+                title="Map showing Kolkata, the sample restaurant city"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="contact-map rounded-4"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-12 col-lg-6">
+              <form
+                action=""
+                id="contactForm"
+                class="p-4 bg-light rounded-4"
+                novalidate
+              >
+                <h3 class="h5 mb-3">Booking Enquiry</h3>
+                <p class="small text-secondary">
+                  All fields are required. This demo checks your input without
+                  sending it.
+                </p>
+
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Your name</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    class="form-control"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="60"
+                    aria-describedby="nameError"
+                    required
+                  />
+                  <div id="nameError" class="invalid-feedback">
+                    Enter a name between2 and 60 characters.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    class="form-control"
+                    autocomplete="email"
+                    maxlength="120"
+                    aria-describedby="emailError"
+                    required
+                  />
+<div id="emailError" class="invalid-feedback">
+     Enter a valid email address, up to 120 characters.
+</div>
+</div>
+<div class="row g-3 mb-3">
+  <div class="col-12 col-sm-6">
+    <label for="bookingDate" class="form-label">
+      Booking date
+    </label>
+
+    <input
+      type="date"
+      id="bookingDate"
+      name="bookingDate"
+      class="form-control"
+      aria-describedby="dateError"
+      required
+    >
+
+    <div id="dateError" class="invalid-feedback">
+      Choose today or a future date.
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <label for="bookingTime" class="form-label">
+      Booking time
+    </label>
+
+    <input
+      type="time"
+      id="bookingTime"
+      name="bookingTime"
+      class="form-control"
+      step="900"
+      aria-describedby="timeError"
+      required
+    >
+
+    <div id="timeError" class="invalid-feedback">
+      Choose a future time during opening hours, in 15-minute intervals.
+    </div>
+  </div>
+
+  <div class="col-12">
+    <label for="bookingGuests" class="form-label">
+      Number of guests
+    </label>
+
+    <input
+      type="number"
+      id="bookingGuests"
+      name="bookingGuests"
+      class="form-control"
+      min="1"
+      max="12"
+      step="1"
+      aria-describedby="guestsError"
+      required
+    >
+
+    <div id="guestsError" class="invalid-feedback">
+      Enter a whole number between 1 and 12.
+    </div>
+  </div>
+</div>
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">
+                    Your message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="contactMessage"
+                    class="form-control"
+                    rows="5"
+                    minlength="10"
+                    maxlength="1000"
+                    aria-describedby="messageError"
+                    required
+                  ></textarea>
+
+                  <div id="messageError" class="invalid-feedback">
+                    Enter a message between 10 and 1000 characters.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                  Check Message
+                </button>
+                <p id="formStatus" class="mt-3 mb-0" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <h2 class="h5 fw-bold">Bengal Bites</h2>
+            <p class="text-white-50">A taste of Bengal, served with love.</p>
+            <p class="small text-white-50">
+              A fictional restaurant website built for a student project.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h2 class="h5">Opening Hours</h2>
+
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">Monday - Friday: 12 PM - 10 PM</li>
+              <li>Saturday - Sunday: 11 AM - 11 PM</li>
+            </ul>
+            <p class="small text-white-50">Sample opening hours.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h2 class="h5">Stay Connected</h2>
+
+            <div class="d-flex flex-wrap gap-3">
+              <span class="social-placeholder">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14 21v-8h3l.5-4H14V7c0-1 .3-2 2-2h2V1.5A24 24 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v8z"
+                  />
+                </svg>
+                Facebook
+              </span>
+              <span class="social-placeholder">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+                Instagram
+              </span>
+            </div>
+
+            <p class="small text-white-50 mt-3">Social profiles coming soon.</p>
+            <a href="#home" class="link-light">Back to top</a>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+        <p class="small text-white-50 mb-0 text-center">
+          &copy; <span id="footerYear"></span>Bengal Bites.
+        </p>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="galleryModalTitle">
+              Gallery Preview
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close preview"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="" id="galleryPreview" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
